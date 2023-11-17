@@ -18,22 +18,10 @@ const PostItem = ({ data, prev, next }) => {
             </Link>
           </td>
           <td>
-            <a
-              className="btn btn-warning btn-sm"
-              href="{{route('abouts.edit' , $about->id)}}">
-              Edit
-            </a>
+            <a className="btn btn-warning btn-sm" href="">Edit</a>
           </td>
           <td>
-            <form
-              action="{{route('abouts.destroy' , $about->id)}}"
-              method="post">
-              <button
-                className="btn btn-danger btn-sm"
-                onClick="return confirm('Delete?')">
-                Delete
-              </button>
-            </form>
+            <button className="btn btn-danger btn-sm">Delete</button>
           </td>
         </tr>
       ))}
